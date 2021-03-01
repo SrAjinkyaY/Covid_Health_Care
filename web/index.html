@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css" type="text/css"/>
+        <title>Covid Health Care System</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="spinStop()">
+        <div id="spinLoader" class="container" style=" font-size: 35px; color: olivedrab; height: 700px; margin-top: 300px;">
+            <center>
+                <div id="spinLoader" class="spinner-border m-5" style=" margin-top: 300px; font-size: 35px; color: olivedrab; width: 3rem; height: 3rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </center>
+        </div>
+        <!-- Image and text -->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <img src="Images/icon-3.png" width="55" height="55" alt="Covid Health Care"/>&nbsp;
+            <a class="navbar-brand mb-2" href="index.html">
+                <b class="h3">🅲🅾🆅🅸🅳 🅷🅴🅰🅻🆃🅷 🅲🅰🆁🅴</b>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-0">
+                    <li class="nav-item my-lg-0">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">Home</span></a>
+                    </li>
+                    &nbsp;
+                    <li class="nav-item my-lg-0">
+                        <a class="nav-link" href="viewHospital.jsp">View Covid Hospitals<span class="sr-only">View Covid Hospitals</span></a>
+                    </li>
+                    &nbsp;
+                    <li class="nav-item my-lg-0">
+                        <a class="nav-link" href="Nutrition and diet/netridiet.jsp">Nutrition and Diet<span class="sr-only">Nutrition and Diet</span></a>
+                    </li>
+                    &nbsp;
+                    <li class="nav-item my-lg-0">
+                        <a class="nav-link" href="medi_yoga.jsp">Meditation & Yoga<span class="sr-only">Meditation & Yoga</span></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr-1 mb-0">
+                    <li class="nav-item active" style="">
+                        <a class="nav-link border border-warning rounded-sm bg-light" href="login.jsp">&nbsp; Sign In / Sign Up &nbsp;</a>
+                    </li>
+                    &nbsp; &nbsp;
+                    <li class="nav-item active">
+                        <a class="nav-link border border-warning rounded-sm bg-light" href="#">&nbsp; Contact Us &nbsp;</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="card">
+            <div class="card-body">
+                <div class="card bg-dark text-white" style=" width: auto;  height: auto;">
+                    <img src="Images/homecover.png" class="card-img" alt="Covid Health Care">
+                    <div class="card-img-overlay">
+                        <div class="row">
+                            <div class="col col-md-2 justify-content-center">
+                                <br/><br/>
+                                <h3 class="bg-transparent" style="font-family:'Source Sans Pro', sans-serif; font-size: 26px; color: #444444;">He who has Health has Hope;<br> And He who has Hope has </h3><h3 class="bg-secondary text-white" style="font-family:'Source Sans Pro', sans-serif; font-size: 26px; width: fit-content;">Everything.</h3>
+                            </div>
+                            <div class="col cod-md-1">
+                                <div class="rounded-lg mx-auto border container border-primary mb-3" style=" width: 400px; height: auto;">
+                                    <center>
+                                        <p></p>
+                                        <p class="p-0 mb-2 bg-success text-white" style="width: 650;"> To apply home treatment for COVID-19 login here! </p>
+                                        <img src="Images/user.png" style=" width: 150px; height: 150px;" alt=""/>
+                                        <form action="User/userLogin.jsp" method="post" class="px-4 py-2 card-body">
+                                            <div class="form-group">
+                                                <label for="exampleDropdownFormEmail1" style="float: left; color: #444444">EMail ID</label>
+                                                <input name="mail" type="text" class="form-control" id="exampleDropdownFormEmail1" placeholder="User Id">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleDropdownFormPassword1" style="float: left; color: #444444">Password</label>
+                                                <input name="pass" type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <button type="submit" class="btn btn-primary" style="float: right;">Sign in</button>
+                                        </form>
+                                        <a class="dropdown-item bg-transparent" style="color: 0033FF;" href="UserRegistration.jsp">New around here? Sign up</a>
+                                        <a class="dropdown-item bg-transparent" href="#">Forgot password?</a>
+                                    </center>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <br/><br/><br/><br/><br/><br/>
+                                <div class="card bg-transparent text-white" style=" text-align: center; max-width: 300px;">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Request For Call!</h3>
+                                        Now you can take treatment at your home !<br>Register yourself and find hospital to take treatment.<br><br>
+                                        <a href="UserRegistration.jsp" class="btn btn-primary" style="font-size: 20px;">Register Here !</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <div class=" card-body card-group bg-light">
+                    <div class="card">
+                        <a href="#"><img src="Images/hospital.png" class="card-img-top" alt="..."></a>
+                        <div class="card-body" onclick="location.href = '#">
+                            <h5 class="card-title">View Hospitals</h5>
+                            <p class="card-text">View Hospitals providing services for COVID patient in your city.</p>
+                            <p class="card-text"><small class="text-muted">Get Information about Covid Care Centers here.</small></p>
+                        </div>
+                    </div>
+                    &nbsp; &nbsp;
+                    <div class="card">
+                        <a href="#"><img src="Images/nutridiet.png" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Nutrition and Diet</h5>
+                            <p class="card-text">Healthy diet and nutrition can boosts your immunity. Take your meal properly.</p>
+                            <p class="card-text"><small class="text-muted">Immunity boosting tips.</small></p>
+                        </div>
+                    </div>
+                    &nbsp; &nbsp;
+                    <div class="card">
+                        <a href="#"><img src="Images/yogamedi.png" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Yoga and Meditation</h5>
+                            <p class="card-text">Yoga play significant role in the psycho-social care and rehabilitation of COVID-19.</p>
+                            <p class="card-text"><small class="text-muted">Yoga and meditation practice might be an adjunctive treatment to the COVID-19.</small></p>
+                        </div>
+                    </div>
+                    &nbsp; &nbsp;
+                    <div class="card">
+                        <a href="#"><img src="Images/inspstory.png" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Inspiring Stories From Ground</h5>
+                            <p class="card-text">View stories of COVID warrior how they inspired and recovered them self.</p>
+                            <p class="card-text"><small class="text-muted">He who has health has hope; and he who has hope has everything.</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            &nbsp;
+            <div class="card-footer text-muted">
+                2 days ago
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var preloader = document.getElementById('spinLoader');
+            function spinStop() {
+                preloader.style.display = 'none';
+            }
+        </script>
+    </body>
+</html>
